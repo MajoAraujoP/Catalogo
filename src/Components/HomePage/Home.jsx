@@ -1,21 +1,33 @@
 import React from "react";
 import Product from "./Product";
 import SignInModal from "./SignInModal";
+import NavBar from "./NavBar";
 
 const Home = () => {
     return(
         <div className="MainPage">
-            <div className="NavBar">
-                <div className="Logo">
-                    <img className="LogoImg" src="\Materiales\logo.jpg" alt="" />
-                    <h1 className="Name">Nutrisima</h1>
-                </div>
-                <div className="searchDiv">
-                    <input className="Search" type="search" placeholder="&#128269; Buscar"/>
-                </div>
-            </div>
             <div>
+                <NavBar/>
+            </div>
+            {/*<div className="Carrusel">         
+                <div>
+                    <img className="ImgCarrusel" src="\Materiales\PuntaBallena.jpg" alt="" />    
+                </div>
+                <div>
+                    <img className="ImgCarrusel" src="\Materiales\Hornex.jpg" alt="" />
+                </div>
+                <div>
+                    <img className="ImgCarrusel" src="\Materiales\fortylex.jpg" alt="" />
+                </div>
+                <div>
+                    <img className="ImgCarrusel" src="\Materiales\Azucarlito.png" alt="" />
+                </div> 
+            </div>*/}
+            <div className="ProductMain">
                 <Product/>
+            </div>
+            <div className="Footer">
+                <img className="ImgFooter" src="\Materiales\FondoRojo.jpeg" alt="" />
             </div>
         </div>
     );
